@@ -1,7 +1,7 @@
 #!/router/bin/python
 # Author: mhudgins
 
-# Problem aken from:
+# Problem taken from:
 #   http://projecteuler.net/problem=17
 #  
 # Problem: 
