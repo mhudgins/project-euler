@@ -21,8 +21,17 @@ def fib_of_n(n):
     else:
       return fib_of_n(n-1) + fib_of_n(n-2)
 
+# Dynamic programming approach to finding nth Fib number
+def dynamic_fib(n):
+  fib_nums = [1,2]
+  for i in range(2,n):
+    fib_nums.append(fib_nums[i-1] + fib_nums[i-2])
+
+  return fib_nums[-1]
+
 for number in range(3,5000):
-  fib = fib_of_n(number)
+  #fib = fib_of_n(number)
+  fib = dynamic_fib(number)
   if len(str(fib)) > 999:
     print "The first Fibonacci term with at least 1,000 digits is: %d" % number 
     break
